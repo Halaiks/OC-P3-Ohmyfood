@@ -1,0 +1,146 @@
+/***SECTION EN-TETE***/
+
+.entete {
+    background-color: #eaeaea;
+    text-align: center;
+  
+    &_titre {
+      margin: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 16px;
+    }
+  
+    &_titre i {
+      padding-right: 17px;
+    }
+  }
+  
+  /****SECTION INTRO****/
+  
+  .intro {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #f2f2f2;
+  
+    &_titre {
+      width: 100%;
+      font-size: 24px;
+      margin: 39px 58px 0 42px;
+      text-align: center;
+    }
+  
+    &_p {
+      width: 100%;
+      font-size: 18px;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 27px;
+    }
+  
+    &_btn {
+      @include bouton_explor_and_command;
+      margin-bottom: 57px;
+    }
+  }
+  
+  /***SECTION FONCTIONNEMENT***/
+  
+  .fonctionnement {
+    counter-reset: number;
+    width: 100%;
+    h2 {
+      margin: 48px 0 26px 0;
+      padding-left: 20px;
+    }
+    & ol {
+      padding-left: 24px;
+      padding-right: 24px;
+      display: flex;
+      flex-direction: column;
+  
+      gap: 24px;
+      list-style: none;
+      padding: 0;
+    }
+    & li {
+      margin-left: 30px;
+      width: 75%;
+      @include bouton_fonction;
+      i {
+        @include config_icone;
+      }
+      .fa-store{
+        color : $color-primary;
+      }
+    }
+  }
+  
+  /****SECTION RESTAURANT****/
+  
+  .restaurant {
+    padding-top: 54px;
+    width: 100%;
+    background: #eaeaea;
+    margin-top: 68px;
+    padding-bottom: 66px;
+  
+    &_new {
+      @include new;
+      margin-top: 10px;
+      position: absolute;
+      right: 30px;
+    }
+  
+    &_lien {
+      @include lienSimple;
+    }
+  
+    &_titre {
+      margin-top: 0;
+      padding-left: 20px;
+    }
+  
+    &_card {
+      @include cards;
+  
+      &_img {
+        @include cards_img;
+        height: 231px;
+      }
+  
+      &_info {
+        position: relative;
+        padding-left: 13px;
+        width: 100%;
+      }
+  
+      &_info h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 16px;
+        margin-bottom: 5px;
+      }
+  
+      &_info p {
+        margin: 0;
+        padding-bottom: 12px;
+        font-weight: 300;
+        font-size: 17px;
+      }
+  
+      &_info i {
+        font-size: x-large;
+        position: absolute;
+        right: 5px;
+        top: 10%;
+        padding-right: 40px;
+      }
+      .fa-solid {
+        @include heart;
+      }
+    }
+  }
+  

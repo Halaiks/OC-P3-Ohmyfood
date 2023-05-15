@@ -1,0 +1,27 @@
+@mixin cards_restaurants {background: $color-restaurants-cards;
+   border-radius: 15px;         
+   margin-bottom: 1.125rem;
+   margin-top: 1.5rem;
+   width: 100%;
+
+   @include desktop {width: 78%;}
+  }
+
+@mixin new_restaurants {background: $color-tertiary;
+ border-radius: 2px;
+ box-shadow: $shadow-restaurants-badge;
+ color: #008766;
+ margin-left: -6rem;
+ margin-top: 1rem;
+ padding: 0.43rem 0.66rem;
+ position: absolute;
+ width: 5rem;
+}
+
+@mixin icon-restaurants {cursor: pointer;
+  font-size: 1.5rem;
+  justify-self: end;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  position: relative;
+ }
