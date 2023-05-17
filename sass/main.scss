@@ -2,9 +2,10 @@
 
 // 1. Configuration and helpers
 @import 
-  'abstracts/_variables.scss',
-  '/Users/alexandre/Documents/Formations/OpenClassrooms/Formation Développeur Web/Projets/P3/Code/Ohmyfood/sass/abstracts/_functions.scss',
-  '/Users/alexandre/Documents/Formations/OpenClassrooms/Formation Développeur Web/Projets/P3/Code/Ohmyfood/sass/abstracts/_mixins.scss';
+  'utils/_variables.scss',
+  'utils/_functions.scss',
+  'utils/_loader.scss',
+  'utils/_mixins.scss';
 
 
 // 3. Base stuff
@@ -24,12 +25,9 @@
 // 5. Components
 @import
   'components/_button.scss',
-  'components/_card-restaurants.scss';
+  'components/_card-restaurants.scss',
+  'components/_heart.scss';
 
 // 6. Page-specific styles
 @import
 'pages/_home.scss';
-
-// 7. Themes
-@import
-  'themes/_default.scss';

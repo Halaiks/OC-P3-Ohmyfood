@@ -1,13 +1,65 @@
-/*****MIXINS BOUTONS*****/
-/****FAVORIS******/
-/*****MIXIN SECTION FONCTIONNEMENT*****/
-/*****MIXINS CARDS DE L'INDEX *****/
-/***MENU ENTREES/PLATS/DESSERTS***/
-/***MIXINS CARDS DES MENUS***/
-/***GENERAL***/
+.loader {
+  position: fixed;
+  z-index: 989;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  animation: loader 2s forwards;
+}
+
+@keyframes loader {
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+.Parent_dot {
+  display: flex;
+  margin: auto;
+}
+.Parent_dot .dot {
+  width: 100px;
+  height: 48px;
+  background: radial-gradient(circle closest-side, #9356DC 90%, rgba(0, 0, 0, 0)) 0% 50%, radial-gradient(circle closest-side, #9356DC 90%, rgba(0, 0, 0, 0)) 50% 50%, radial-gradient(circle closest-side, #9356DC 90%, rgba(0, 0, 0, 0)) 100% 50%;
+  background-size: 33.3333333333% 24px;
+  background-repeat: no-repeat;
+  animation: d3 2s infinite linear;
+}
+@keyframes d3 {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
+
+@keyframes dot_loader {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.25);
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.25);
+  }
+}
+/*****MIXIN SECTION FONCTIONNEMENT*****/ /***GENERAL***/
 body {
   margin: 0;
   font-family: "Roboto";
+  max-width: 768px;
 }
 
 ul, ol {
@@ -23,7 +75,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/************************ Desktop ************************/
 .header {
   font-family: "Shrikhand", sans-serif;
   padding: 14px 0 5px 0;
@@ -31,7 +82,6 @@ body {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   position: relative;
   text-align: center;
-  background-color: red;
 }
 .header_precedent i {
   font-size: x-large;
@@ -81,7 +131,7 @@ h1 {
   padding-bottom: 7px;
 }
 
-/***SECTION EN-TETE***/
+/*****MIXINS CARDS DE L'INDEX *****/ /****FAVORIS******/ /***SECTION EN-TETE***/
 .entete {
   background-color: #eaeaea;
   text-align: center;
@@ -118,12 +168,12 @@ h1 {
   margin-bottom: 27px;
 }
 .intro_btn {
-  padding: 13px 18px 13px 18px;
+  padding: 13px 16px 13px 16px;
   border-radius: 25px;
   color: white;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  border: none;
   font-family: "Roboto";
-  border-color: transparent;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -131,16 +181,15 @@ h1 {
   margin-bottom: 57px;
 }
 .intro_btn:hover {
-  transform: scale(1.02);
-  transition: transform 100ms;
-  opacity: 0.9;
+  transition-duration: 0.3s;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 /***SECTION FONCTIONNEMENT***/
 .fonctionnement {
   counter-reset: number;
-  width: 100%;
+  margin-right: 20px;
 }
 .fonctionnement h2 {
   margin: 48px 0 26px 0;
@@ -157,7 +206,6 @@ h1 {
 }
 .fonctionnement li {
   margin-left: 30px;
-  width: 75%;
   border-radius: 20px;
   background-color: #F7F7F7;
   padding: 28px 20px 28px 20px;
@@ -192,14 +240,14 @@ h1 {
   padding-bottom: 66px;
 }
 .restaurant_new {
-  color: #7E7E7E;
+  color: #008766;
   background-color: #99E2D0;
   padding: 7px;
   margin: 0;
   border-radius: 2px;
   font-size: 14px;
-  margin-top: 10px;
   position: absolute;
+  margin-top: 10px;
   right: 30px;
 }
 .restaurant_lien {
@@ -211,17 +259,14 @@ h1 {
   padding-left: 20px;
 }
 .restaurant_card {
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   background: #ffffff;
   border-radius: 15px;
   margin-bottom: 18px;
   margin-left: 14px;
   margin-right: 14px;
 }
-.restaurant_card:hover {
-  transform: scale(1.01);
-}
-.restaurant_card_img {
+.restaurant_card_img img {
   height: 231px;
   width: 100%;
   border-top-right-radius: 15px;

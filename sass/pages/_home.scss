@@ -41,7 +41,7 @@
     }
   
     &_btn {
-      @include bouton_explor_and_command;
+      @include btn;
       margin-bottom: 57px;
     }
   }
@@ -50,7 +50,7 @@
   
   .fonctionnement {
     counter-reset: number;
-    width: 100%;
+    margin-right: 20px;
     h2 {
       margin: 48px 0 26px 0;
       padding-left: 20px;
@@ -67,7 +67,6 @@
     }
     & li {
       margin-left: 30px;
-      width: 75%;
       @include bouton_fonction;
       i {
         @include config_icone;
@@ -89,8 +88,8 @@
   
     &_new {
       @include new;
-      margin-top: 10px;
       position: absolute;
+      margin-top: 10px;
       right: 30px;
     }
   
@@ -106,7 +105,7 @@
     &_card {
       @include cards;
   
-      &_img {
+      &_img img {
         @include cards_img;
         height: 231px;
       }
