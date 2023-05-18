@@ -59,7 +59,6 @@
 body {
   margin: 0;
   font-family: "Roboto";
-  max-width: 768px;
 }
 
 ul, ol {
@@ -112,6 +111,7 @@ h1 {
   padding-top: 22px;
   padding-left: 25px;
   margin-top: 0;
+  color: white;
 }
 .footer_list {
   list-style: none;
@@ -239,17 +239,6 @@ h1 {
   margin-top: 68px;
   padding-bottom: 66px;
 }
-.restaurant_new {
-  color: #008766;
-  background-color: #99E2D0;
-  padding: 7px;
-  margin: 0;
-  border-radius: 2px;
-  font-size: 14px;
-  position: absolute;
-  margin-top: 10px;
-  right: 30px;
-}
 .restaurant_lien {
   text-decoration: none;
   color: black;
@@ -265,6 +254,22 @@ h1 {
   margin-bottom: 18px;
   margin-left: 14px;
   margin-right: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.restaurant_card_new {
+  color: #008766;
+  background-color: #99E2D0;
+  padding: 7px;
+  margin: 0;
+  border-radius: 2px;
+  font-size: 14px;
+  margin-top: 10px;
+  right: 30px;
+  position: absolute;
+  margin-top: 10px;
+  right: 30px;
 }
 .restaurant_card_img img {
   height: 231px;

@@ -85,13 +85,7 @@
     background: #eaeaea;
     margin-top: 68px;
     padding-bottom: 66px;
-  
-    &_new {
-      @include new;
-      position: absolute;
-      margin-top: 10px;
-      right: 30px;
-    }
+
   
     &_lien {
       @include lienSimple;
@@ -104,6 +98,13 @@
   
     &_card {
       @include cards;
+
+      &_new {
+        @include new;
+        position: absolute;
+        margin-top: 10px;
+        right: 30px;
+      }
   
       &_img img {
         @include cards_img;
