@@ -1,2 +1,23 @@
+// Tablette
+$screen-tablet-min: 768px;
+$screen-tablet-max: 1023.99px;
 
-    
+// Desktop
+$screen-desktop-min: 1024px;
+$screen-desktop-max: 1440px;
+
+// Media queries Tablette
+@mixin tablet {
+    @media (min-width: #{$screen-tablet-min}) and (max-width: #{$screen-tablet-max})
+    {
+        @content;
+    }
+}
+
+//Media queries DEsktop
+@mixin desktop {
+    @media (min-width: #{$screen-desktop-min})
+    {
+        @content;
+    }
+}

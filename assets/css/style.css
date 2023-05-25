@@ -56,9 +56,10 @@
   }
 }
 /*****MIXIN SECTION FONCTIONNEMENT*****/ /***GENERAL***/
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: "Roboto";
+  padding: 0;
 }
 
 ul, ol {
@@ -102,6 +103,18 @@ h1 {
   background: #353533;
   color: white;
 }
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 .footer_titre {
   font-family: "Shrikhand";
   font-style: italic;
@@ -113,12 +126,25 @@ h1 {
   margin-top: 0;
   color: white;
 }
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .footer_titre {
+    padding: 0;
+    margin: 56px 26px 30px 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer_titre {
+    padding: 0;
+    margin: 56px 26px 30px 16px;
+  }
+}
 .footer_list {
   list-style: none;
   font-size: 16px;
   font-weight: 400;
   padding-bottom: 22px;
   margin-bottom: 0;
+  margin-left: 23px;
 }
 .footer_list i {
   padding-right: 11px;
@@ -129,6 +155,20 @@ h1 {
 }
 .footer_list li {
   padding-bottom: 7px;
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .footer_list {
+    margin-top: 58px;
+    display: flex;
+    gap: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer_list {
+    margin-top: 58px;
+    display: flex;
+    gap: 10px;
+  }
 }
 
 /*****MIXINS CARDS DE L'INDEX *****/ /****FAVORIS******/ /***SECTION EN-TETE***/
@@ -191,18 +231,36 @@ h1 {
   counter-reset: number;
   margin-right: 20px;
 }
+@media (min-width: 1024px) {
+  .fonctionnement {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+}
 .fonctionnement h2 {
   margin: 48px 0 26px 0;
   padding-left: 20px;
 }
+@media (min-width: 1024px) {
+  .fonctionnement h2 {
+    width: 100%;
+  }
+}
 .fonctionnement ol {
-  padding-left: 24px;
-  padding-right: 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;
   list-style: none;
   padding: 0;
+}
+@media (min-width: 1024px) {
+  .fonctionnement ol {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .fonctionnement li {
   margin-left: 30px;
@@ -211,6 +269,12 @@ h1 {
   padding: 28px 20px 28px 20px;
   border: transparent;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 1024px) {
+  .fonctionnement li {
+    width: 25%;
+    margin: 0 20px 0 20px;
+  }
 }
 .fonctionnement li::before {
   content: counter(number);
@@ -239,6 +303,43 @@ h1 {
   margin-top: 68px;
   padding-bottom: 66px;
 }
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .restaurant {
+    padding-top: 30px;
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant {
+    padding-top: 30px;
+    margin-top: 50px;
+    width: 100%;
+    padding-left: 175px;
+    padding-right: 175px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.restaurant_new {
+  color: #008766;
+  background-color: #99E2D0;
+  padding: 7px;
+  margin: 0;
+  border-radius: 2px;
+  font-size: 14px;
+  margin-top: 10px;
+  position: absolute;
+  right: 30px;
+}
 .restaurant_lien {
   text-decoration: none;
   color: black;
@@ -247,6 +348,20 @@ h1 {
   margin-top: 0;
   padding-left: 20px;
 }
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .restaurant_titre {
+    padding-left: 40px;
+    padding-top: 0;
+    width: 100%;
+    margin-bottom: -32px;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant_titre {
+    padding-top: 30px;
+    width: 100%;
+  }
+}
 .restaurant_card {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   background: #ffffff;
@@ -254,24 +369,20 @@ h1 {
   margin-bottom: 18px;
   margin-left: 14px;
   margin-right: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
-.restaurant_card_new {
-  color: #008766;
-  background-color: #99E2D0;
-  padding: 7px;
-  margin: 0;
-  border-radius: 2px;
-  font-size: 14px;
-  margin-top: 10px;
-  right: 30px;
-  position: absolute;
-  margin-top: 10px;
-  right: 30px;
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .restaurant_card {
+    width: 40%;
+    position: relative;
+  }
 }
-.restaurant_card_img img {
+@media (min-width: 1024px) {
+  .restaurant_card {
+    width: 40%;
+    position: relative;
+  }
+}
+.restaurant_card_img {
   height: 231px;
   width: 100%;
   border-top-right-radius: 15px;
