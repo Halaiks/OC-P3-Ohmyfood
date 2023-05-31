@@ -52,20 +52,9 @@
     counter-reset: number;
     margin-right: 20px;
 
-    @include desktop {
-      display: flex;
-    flex-wrap: wrap;
-    padding-left: 175px;
-    padding-right: 175px;
-    }
-
     h2 {
       margin: 48px 0 26px 0;
       padding-left: 20px;
-
-      @include desktop {
-        width: 100%;
-      }
     }
 
     & ol {
@@ -74,22 +63,11 @@
       gap: 24px;
       list-style: none;
       padding: 0;
-
-      @include desktop {
-        width: 100%;
-   flex-direction: row;
-   justify-content: space-between;
-    }
   }
 
  
     & li {
       margin-left: 30px;
-
-    @include desktop {
-      width: 25%;
-    margin: 0 20px 0 20px;
-    }
 
       @include bouton_fonction;
       i {
@@ -100,39 +78,18 @@
       }
     }
   }
-  
+
   /****SECTION RESTAURANT****/
+
+  .Restaurants {
+    background: #eaeaea;
+  }
   
   .restaurant {
     padding-top: 54px;
     width: 100%;
-    background: #eaeaea;
     margin-top: 68px;
     padding-bottom: 66px;
-
-      @include tablet {
-        padding-top:30px;
-        margin-top:50px;
-        padding-left: 50px;
-        padding-right: 50px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 50px;
-      }
-
-      @include desktop {
-        padding-top:30px;
-        margin-top:50px;
-        width: 100%;
-        padding-left: 175px;
-        padding-right: 175px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-justify-content: space-between;
-      }
   
     &_new {
       @include new;
@@ -147,33 +104,12 @@ justify-content: space-between;
   
     &_titre {
       margin-top: 0;
-      padding-left: 20px;
-
-      @include tablet {
-        padding-left:40px;
-            padding-top:0;
-            width: 100%;
-            margin-bottom:-32px;
-      }
-
-      @include desktop {
-          padding-top:30px;
-          width: 100%;
-      }
+      margin-left: 5%;
     }
   
     &_card {
       @include cards;
 
-      @include tablet {
-        width: 40%;
-        position: relative;
-      }
-
-      @include desktop {
-        width: 40%;
-        position: relative;
-      }
   
       &_img {
         @include cards_img;

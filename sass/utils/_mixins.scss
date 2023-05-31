@@ -23,3 +23,59 @@
         color: $color-icon-steps;
         margin-right: 23px;
   }
+
+  /***MENU ENTREES/PLATS/DESSERTS***/
+@mixin titre_menu {
+  width: 40px;
+  padding-bottom: 5px;
+  border-bottom: 4px solid $color-tertiary;
+}
+
+/***MIXINS CARDS DES MENUS***/
+
+@mixin card_menu {
+  background: #ffffff;
+  border-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 13px;
+  margin-right: 13px;
+  cursor: pointer;
+}
+
+@mixin menu_info{
+padding-left: 15px;
+}
+
+@mixin prix {
+
+  font-weight: bold;
+  font-size: 15px;
+}
+
+@mixin check {
+  display: flex;
+  align-items: center;
+ padding: 0 19px 0 19px;
+  border-radius: 0px 15px 15px 0px;
+  background-color: $color-tertiary;
+  transition: all 0.7s;
+}
+
+@mixin config_check{
+     background: white;
+      border-radius: 50px;
+      color : $color-tertiary;
+      width: 1.5rem;
+      display: grid;
+      place-items: center;
+     
+}
+
+@mixin cache_info_check{
+  overflow: hidden;
+        text-overflow: ellipsis ;
+        white-space: nowrap;
+      }

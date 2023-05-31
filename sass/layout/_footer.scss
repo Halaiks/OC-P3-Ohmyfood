@@ -1,16 +1,6 @@
 .footer {
     background: #353533;
     color: white;
-
-    @include tablet {
-      display: flex;
-        flex-direction: row-reverse;
-    }
-  
-    @include desktop {
-      display: flex;
-        flex-direction: row-reverse;
-    }
   
     &_titre {
       font-family: "Shrikhand";
@@ -22,16 +12,6 @@
       padding-left: 25px;
       margin-top: 0;
       color: white;
-
-      @include tablet {
-        padding:0;
-            margin: 56px 26px 30px 16px;
-      }
-      @include desktop {
-        padding:0;
-            margin: 56px 26px 30px 16px;
-      }
-    }
   
     &_list {
       list-style: none;
@@ -53,17 +33,7 @@
         padding-bottom: 7px;
         
       }
-
-      @include tablet {
-        margin-top: 58px;
-            display: flex;
-            gap: 10px;
-      }
-      @include desktop {
-        margin-top: 58px;
-            display: flex;
-            gap: 10px;
-      }
     }
   }
+}
   
