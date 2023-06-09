@@ -1,4 +1,13 @@
 @media screen and (min-width: 768px){
+
+    .cards_restaurants {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 50px;
+        column-gap: 100px;
+        width: 97%;
+    }
+
     .restaurant{
         padding-top:30px;
         margin-top:50px;
@@ -6,10 +15,11 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         gap:92px;
     
         &_titre{
+
             padding-top:0;
             width: 100%;
             margin-bottom:-32px;
@@ -17,7 +27,7 @@
     
         &_card{
             
-            width: 40%;
+            width: 100%;
             position: relative;
         }   
     }
@@ -53,8 +63,9 @@
 @media screen and (min-width: 1024px){
 
 .fonctionnement{
-    margin-left: 5%;
-    margin-right: 5%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
 
 h2{
     width: 100%;  
@@ -74,30 +85,32 @@ h2{
 
 }
 
-.Restaurants {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
+.cards_restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 100px;
+    width: 97%;
+}
 .restaurant{
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top:30px;
     margin-top:50px;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap:92px;
 
     &_titre{
-        padding-top:0;
         width: 100%;
         margin-bottom:-32px;
     }
 
     &_card{
         
-        width: 40%;
+        width: 100%;
         position: relative;
     }   
 

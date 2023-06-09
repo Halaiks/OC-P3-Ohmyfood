@@ -101,7 +101,7 @@ body {
   margin-top: 0;
   color: white;
 }
-.footer_titre_list {
+.footer_list {
   list-style: none;
   font-size: 16px;
   font-weight: 400;
@@ -109,15 +109,15 @@ body {
   margin-bottom: 0;
   margin-left: 23px;
 }
-.footer_titre_list i {
-  padding-right: 11px;
-}
-.footer_titre_list a {
+.footer_list a {
   text-decoration: none;
   color: white;
 }
-.footer_titre_list li {
+.footer_list li {
   padding-bottom: 7px;
+}
+.footer_list li i {
+  padding-right: 11px;
 }
 
 .header {
@@ -219,7 +219,7 @@ h1 {
   margin-left: 30px;
   border-radius: 20px;
   background-color: #F7F7F7;
-  padding: 28px 20px 28px 20px;
+  padding: 28px 16px 28px 20px;
   border: transparent;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
@@ -236,7 +236,8 @@ h1 {
 .fonctionnement li i {
   font-size: 16px;
   color: #7E7E7E;
-  margin-right: 23px;
+  margin-right: 15px;
+  margin-left: -20px;
 }
 .fonctionnement li .fa-store {
   color: #9356DC;
@@ -269,8 +270,8 @@ h1 {
   color: black;
 }
 .restaurant_titre {
-  margin-top: 0;
-  margin-left: 5%;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 .restaurant_card {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -279,6 +280,7 @@ h1 {
   margin-bottom: 18px;
   margin-left: 14px;
   margin-right: 14px;
+  width: auto;
 }
 .restaurant_card_img {
   height: 231px;
@@ -517,6 +519,13 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
+  .cards_restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 100px;
+    width: 97%;
+  }
   .restaurant {
     padding-top: 30px;
     margin-top: 50px;
@@ -524,7 +533,7 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 92px;
   }
   .restaurant_titre {
@@ -533,7 +542,7 @@ h1 {
     margin-bottom: -32px;
   }
   .restaurant_card {
-    width: 40%;
+    width: 100%;
     position: relative;
   }
   .menu {
@@ -562,8 +571,9 @@ h1 {
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement {
-    margin-left: 5%;
-    margin-right: 5%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .fonctionnement h2 {
     width: 100%;
@@ -579,27 +589,30 @@ h1 {
     margin: 0 20px 0 20px;
     cursor: pointer;
   }
-  .Restaurants {
-    padding-left: 5%;
-    padding-right: 5%;
+  .cards_restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 100px;
+    width: 97%;
   }
   .restaurant {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 30px;
     margin-top: 50px;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 92px;
   }
   .restaurant_titre {
-    padding-top: 0;
     width: 100%;
     margin-bottom: -32px;
   }
   .restaurant_card {
-    width: 40%;
+    width: 100%;
     position: relative;
   }
   .footer {

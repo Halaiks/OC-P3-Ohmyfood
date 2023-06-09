@@ -12,6 +12,7 @@
       padding-left: 25px;
       margin-top: 0;
       color: white;
+    }
   
     &_list {
       list-style: none;
@@ -21,19 +22,17 @@
       margin-bottom:0;
       margin-left: 23px;
   
-      i {
-        padding-right: 11px;
-      }
-  
       a {
         text-decoration: none;
         color: white;
       }
       li{
         padding-bottom: 7px;
+        i {
+          padding-right: 11px;
+        }
         
       }
     }
   }
-}
   
