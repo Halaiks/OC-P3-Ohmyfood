@@ -98,6 +98,7 @@ body {
   line-height: 26px;
   padding-top: 22px;
   padding-left: 25px;
+  padding-bottom: 16px;
   margin-top: 0;
   color: white;
 }
@@ -283,12 +284,11 @@ h1 {
   width: auto;
 }
 .restaurant_card_img {
-  height: 231px;
+  height: 174px;
   width: 100%;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   object-fit: cover;
-  height: 231px;
 }
 .restaurant_card_info {
   position: relative;
@@ -534,7 +534,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 92px;
+    gap: 28px;
   }
   .restaurant_titre {
     padding-top: 0;
@@ -626,7 +626,7 @@ h1 {
   }
   .footer_titre {
     padding: 0;
-    margin: 56px 26px 30px 16px;
+    margin: 56px 26px 30px 74px;
   }
   .restaurant_grostitre {
     margin-left: 15%;
