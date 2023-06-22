@@ -10,7 +10,7 @@
 
 @keyframes loader {
   to {
-    opacity: 0;
+    opacity: 1;
     z-index: -1;
   }
 }
@@ -240,7 +240,7 @@ h1 {
   margin-right: 15px;
   margin-left: -20px;
 }
-.fonctionnement li .fa-store {
+.fonctionnement li:hover .fa-solid {
   color: #9356DC;
 }
 

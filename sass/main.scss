@@ -3,8 +3,6 @@
 // 1. Configuration and helpers
 
 @import 
-  'utils/_variables.scss',
-  'utils/_functions.scss',
   'utils/_loader.scss',
   'utils/_mixins.scss',
   'utils/_animations.scss';
@@ -13,15 +11,12 @@
 // 3. Base stuff
 @import
   'base/_base.scss',
-  'base/_fonts.scss',
-  'base/_typography.scss',
-  'base/_helpers.scss';
+  'base/_typography.scss';
 
 // 4. Layout-related sections
 @import
 'layout/_footer.scss',
-  'layout/_header.scss',
-  'layout/_restaurants.scss';
+  'layout/_header.scss';
 
 // 5. Components
 @import

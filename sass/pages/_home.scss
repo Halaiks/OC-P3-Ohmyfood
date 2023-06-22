@@ -73,9 +73,10 @@
       i {
         @include config_icone;
       }
-      .fa-store{
+      &:hover .fa-solid{
         color : $color-primary;
       }
+      
     }
   }
 
