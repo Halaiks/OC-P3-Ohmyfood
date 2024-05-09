@@ -1,3 +1,5 @@
+<p align="center">ℹ️ <b>Un README plus complet arrive bientôt ...</b></p>
+
 # <p align="center"><img src="https://user.oc-static.com/upload/2024/02/03/17069637720332_Capture%20d%E2%80%99e%CC%81cran%202024-02-03%20a%CC%80%2014.35.07.png" /></p>
 <p align="center">Projet réalisé dans le cadre de la formation Développeur Web avec OpenClassrooms</p>
 
