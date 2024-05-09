@@ -22,7 +22,7 @@ Intégrer le site en HTML et CSS avec la [maquette](https://www.figma.com/file/t
 ## 🏆 Résultat
 
 ➡️  [Visiter le site](https://halaiks.github.io/OC-P3-Ohmyfood/)
-<p align="center"><img src="screenshots/Booki.png" /></p>
+<p align="center"><img src="screenshots/Ohmyfood.png" /></p>
 
 ## 🙇 Auteur
 
