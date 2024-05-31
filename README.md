@@ -11,13 +11,13 @@ En plus des systèmes classiques de réservation, les clients pourront composer 
 
 - Intégrer le site en HTML, CSS et Sass avec la [maquette](https://www.figma.com/file/t4449fzDnwGYmzuwQdu87V/Projet-3-FR---Ohmyfood?node-id=0%3A1) fournie et en respectant les spécifications du [brief créatif](https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/IW_P4+Animations+CSS+Ohmyfood/Brief+cr%C3%A9atif+site+Ohmyfood.pdf).
 - Le site doit être responsive, développé en mobile first.
-- Des effets d'animations doivent êtres créees pour :
+- Des effets d'animation doivent être créés pour :
     - le loader du site
-    - les boutons (boutons pricipaux et like)
+    - les boutons (boutons principaux et like)
     - l'apparition des plats à l'arrivée sur les pages menus
-    - l'ajout d'un plat au panier (avec une coche à droite du plat, au survol pour cette première version).
-- Le code HTML ne doit pas contenir de propriété CSS.
-- L'utilisation de Sass n'est pas obligatoire mais recommandé.
+    - l'ajout d'un plat au panier (avec une coche à droite du plat, au survol pour cette version).
+- Le code HTML ne doit pas contenir de propriétés CSS.
+- L'utilisation de Sass n'est pas obligatoire, mais recommandée.
 - Les codes HTML et CSS ne doivent soulever aucune erreur sur le validateur W3C.
 - Aucun autre langage ne doit être utilisé (comme JavaScript, par exemple).
 
